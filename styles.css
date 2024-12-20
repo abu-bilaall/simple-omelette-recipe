@@ -18,7 +18,7 @@ body {
     font-family: 'outfit', sans-serif;
     font-size: 16px;
     line-height: 1.6;
-    background: white;
+    background-color: white;
     color: hsl(24, 5%, 18%);
 }
 
@@ -30,9 +30,12 @@ header > img {
 .contentainer {
     max-width: 480px;
     margin: 0 auto;
-    padding: 20px;
-    background: white;
+    background-color: white;
     overflow: hidden;
+}
+
+.contentainer > div {
+    padding: 0px 20px;
 }
 
 section {
@@ -98,8 +101,6 @@ td {
 @media (min-width: 768px) {
     .contentainer {
       max-width: 700px;
-      padding: 20px;
-      background-color: white;
     }
 
     .preparation {
@@ -112,5 +113,27 @@ td {
   
     td {
       padding: 15px;
+    }
+}
+
+@media(min-width: 1024px) {
+    body {
+        padding: 20px;
+        background-color: hsl(30, 18%, 87%);
+    }
+
+    .contentainer {
+        border-radius: 10px;
+        margin-bottom: 10px;
+        padding: 20px;
+        box-shadow:  0px 0px 4px 2px hsl(24, 5%, 18%);
+    }
+
+    .contentainer > div {
+        padding: 0px;
+    }
+
+    img[alt='omelette'] {
+        border-radius: 14px;
     }
 }
